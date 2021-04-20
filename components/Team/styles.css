@@ -1,0 +1,60 @@
+section.team-content {
+    text-align: center;
+    padding: 10%;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    
+}
+
+div#team{
+    padding: 15% 10%;
+
+
+}
+
+section.team-content p{
+    color: #FFC200;
+    font-weight: bold;
+}
+
+div#team p#text {
+    color: white;
+    margin-top: 5vh;
+    text-align: justify;
+
+}
+
+
+div#team h3{
+    color: white;
+    font-size: 1.5em
+}
+section.team-content h4{
+    font-size:1.2em;
+    margin:1.4vh
+}
+
+
+
+section.team-content img {
+    width:35vw;
+    border-radius: 50%;
+    position: relative;
+    border: 3px solid white;
+    margin-top: 5vh;
+
+}
+
+
+
+@media (min-width: 950px) {  
+    div#team {
+        padding-top: 15vh !important;
+    }
+
+    section.team-content img {
+        width: 10vw;
+    }
+}

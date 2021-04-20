@@ -1,0 +1,31 @@
+div#documentation-content{
+    margin: 10%;
+    display: grid;
+    gap: 5vh;
+    text-align: justify;
+}
+
+div#documentation-content img {
+    max-width: 80vw;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 10px;
+    border: 1px solid #0a0220;
+
+}
+
+
+@media (min-width: 950px) {
+    div#documentation-content{
+        margin-top: -10vh !important;
+    }
+
+    div#documentation-content h2 {
+        margin-bottom: 1vh;
+    }
+
+    div#documentation-content p{
+        font-weight: 500;
+    }
+}
