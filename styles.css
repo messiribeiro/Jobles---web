@@ -10,9 +10,10 @@
     box-sizing: border-box;
 }
 
-div#document{
-    z-index: 1;
-}
+
+
+
+
 
 button {
     outline:none;
@@ -202,7 +203,6 @@ main section.presentation div#smile-name-text p{
 main section.presentation div#smile-name-text p span{
     color: rgb(209, 212, 2);
 }
-
 
 
 
@@ -553,7 +553,10 @@ section#team {
 
 
 
-
+#document {
+    position: absolute;
+    z-index: 30;
+}
 
     
 
@@ -580,18 +583,7 @@ body{
 } */
 
 
-.context {
-    width: 100%;
-    position: absolute;
-    top:50vh;
-    
-}
 
-.context h1{
-    text-align: center;
-    color: #fff;
-    font-size: 50px;
-}
 
 
 .area{
@@ -604,12 +596,13 @@ body{
 }
 
 .circles{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     overflow: hidden;
+    z-index: 0;
 }
 
 .circles li{
@@ -621,6 +614,7 @@ body{
     background: rgba(255, 255, 255, 0.2);
     animation: animate 25s linear infinite;
     bottom: -150px;
+
     
 }
 
@@ -717,3 +711,12 @@ body{
     }
 
 }
+
+
+
+
+
+
+
+
+

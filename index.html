@@ -49,15 +49,20 @@
 
             <nav id="right-side">
                 <ul id="just-icons">
-                    <li><a target="_blank" href="https://github.com/messiribeiro/Jobles"><img src="../../assets//github.svg" alt=""></a></li>
-                    <li> <a href="https://www.instagram.com/droffnats/"><img src="../../assets//instagram (1).svg" alt=""></a> </li>
-                    <li> <a href="https://twitter.com/Droffnats"><img src="../../assets//twitter (1).svg" alt=""></a> </li>
-                    <li> <a href="https://www.facebook.com/profile.php?id=100011472649639"> <img src="../../assets//facebook (1).svg" alt=""></a></li>
+                    <li><a target="_blank" href="https://github.com/messiribeiro/Jobles"><img
+                                src="../../assets//github.svg" alt=""></a></li>
+                    <li> <a href="https://www.instagram.com/droffnats/"><img src="../../assets//instagram (1).svg"
+                                alt=""></a> </li>
+                    <li> <a href="https://twitter.com/Droffnats"><img src="../../assets//twitter (1).svg" alt=""></a>
+                    </li>
+                    <li> <a href="https://www.facebook.com/profile.php?id=100011472649639"> <img
+                                src="../../assets//facebook (1).svg" alt=""></a></li>
                 </ul>
                 <ul id="icons-and-text">
-                    <li class="buttonHover" ><a href="#documentation"> <img src="./assets/book-open.svg" alt=""> Documentação</a></li>
-                    <li class="buttonHover" > <a href="#team"><img src="./assets//users.svg" alt=""> Nosso time</a> </li>
-                    <li><a href="./assets/Jobles 1.0.2.zip"><button class="Download" >Download</button></a></li>
+                    <li class="buttonHover"><a href="#documentation"> <img src="./assets/book-open.svg" alt="">
+                            Documentação</a></li>
+                    <li class="buttonHover"> <a href="#team"><img src="./assets//users.svg" alt=""> Nosso time</a> </li>
+                    <li><a href="./assets/Jobles 1.0.2.zip"><button class="Download">Download</button></a></li>
                 </ul>
 
 
@@ -84,7 +89,26 @@
                     <button>APOIE</button>
 
                 </div>
-                <button id="another-v"> <a target="_blank" href="https://github.com/messiribeiro/Jobles"> Outras Versões</a></button>
+                <button id="another-v"> <a target="_blank" href="https://github.com/messiribeiro/Jobles"> Outras
+                        Versões</a></button>
+
+                <!-- <div class="area">
+                    <ul class="circles">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div> -->
+
+
+
 
             </section>
 
@@ -142,7 +166,7 @@
                 </div>
             </section>
 
-            
+
             <section id="documentation" w3-include-html="./components/Documentation/documentation.html"></section>
             <section id="team" w3-include-html="./components/team/Team.html"></section>
 
@@ -150,43 +174,26 @@
         <footer> Todos os direitos reservados <br> &copy; Jobles </footer>
     </div>
 
-    <!-- 
-        <ul class="circles">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </div> -->
+
 
     <script src="./jquery.js"></script>
     <script src="scripts.js"></script>
     <script>
 
-        //Tenho  que visitar esse site para entender o código abaixo https://www.w3schools.com/howto/tryit.asp?filename=tryhow_html_include_1
+
 
         function includeHTML() {
             var z, i, elmnt, file, xhttp;
-            /* Loop through a collection of all HTML elements: */
             z = document.getElementsByTagName("*");
             for (i = 0; i < z.length; i++) {
                 elmnt = z[i];
-                /*search for elements with a certain atrribute:*/
                 file = elmnt.getAttribute("w3-include-html");
                 if (file) {
-                    /* Make an HTTP request using the attribute value as the file name: */
                     xhttp = new XMLHttpRequest();
                     xhttp.onreadystatechange = function () {
                         if (this.readyState == 4) {
                             if (this.status == 200) { elmnt.innerHTML = this.responseText; }
                             if (this.status == 404) { elmnt.innerHTML = "Page not found."; }
-                            /* Remove the attribute, and call this function once more: */
                             elmnt.removeAttribute("w3-include-html");
                             includeHTML();
                         }
