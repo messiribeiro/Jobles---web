@@ -7,8 +7,8 @@
 #### JavaScript
 #### JQuery
 #### HTML
-<<<<<<< HEAD
+
 #### CSS
-=======
+
 #### CSS
->>>>>>> 349586146b60b928dabd1de4c302114722bddf0c
+
